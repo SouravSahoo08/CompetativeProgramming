@@ -17,8 +17,13 @@ public class quest {
 	}
 
 	private static void changeArray(int[] arr, int n) {
+		int sum = 0;
+		for(int i = 0;i<n;i++) {
+			sum+=arr[i];
+		}
+		
 		for(int i = 0;i<arr.length;i++) {
-			arr[i] = 150 - arr[i]; 
+			arr[i] = sum - arr[i]; 
 		}
 	}
 
